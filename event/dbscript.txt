@@ -1,0 +1,40 @@
+CREATE CLASS Catalog;
+CREATE PROPERTY Catalog.host STRING;
+CREATE PROPERTY Catalog.id STRING;
+CREATE PROPERTY Catalog.desc STRING;
+CREATE PROPERTY Catalog.parent LINK;
+CREATE PROPERTY Catalog.children LINKLIST;
+CREATE PROPERTY Catalog.attributes EMBEDDEDMAP;
+CREATE PROPERTY Catalog.products LINKLIST;
+CREATE PROPERTY Catalog.createDate DATETIME;
+CREATE PROPERTY Catalog.createUserId STRING;
+CREATE PROPERTY Catalog.updateDate DATETIME;
+CREATE PROPERTY Catalog.updateUserId STRING;
+CREATE INDEX catalogHostIdIdx ON Catalog(host, id) UNIQUE;
+
+
+CREATE CLASS Product;
+CREATE PROPERTY Product.host STRING;
+CREATE PROPERTY Product.id STRING;
+CREATE PROPERTY Product.name STRING;
+CREATE PROPERTY Product.desc STRING;
+CREATE PROPERTY Product.attributes EMBEDDEDMAP;
+CREATE PROPERTY Product.upUsers LINKLIST;
+CREATE PROPERTY Product.downUsers LINKLIST;
+CREATE PROPERTY Product.comments LINKLIST;
+CREATE PROPERTY Product.createDate DATETIME;
+CREATE PROPERTY Product.createUserId STRING;
+CREATE PROPERTY Product.updateDate DATETIME;
+CREATE PROPERTY Product.updateUserId STRING;
+CREATE INDEX productHostIdIdx ON Product(host, id) UNIQUE;
+
+
+insert into Role(id,desc) VALUES ('catalogAdmin','Catalog Admin'),('productAdmin','Product Admin');
+
+insert into MenuItem(id, label, path) values
+('catalogAdmin', 'Catalog Admin', '/page/com-networknt-light-v-catalog-admin-home'),
+('productAdmin', 'Product Admin', '/page/com-networknt-light-v-product-admin-home');
+
+insert into MenuItem(id, label, path, left, roles) values
+('catalog', 'Catalog', '/page/com-networknt-light-v-catalog-home', true, 'anonymous,user');
+
