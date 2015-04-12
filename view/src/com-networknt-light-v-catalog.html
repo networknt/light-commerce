@@ -1,0 +1,41 @@
+<script type='text/javascript'>
+    angular.module('lightApp').controller('com.networknt.light.CatalogHomeCtrl', ['$scope', '$http', '$location', 'toaster', 'modelDataService', function ($scope, $http, $location, toaster, modelDataService) {
+
+        $scope.getCatalog = {
+            category : 'catalog',
+            name : 'getCatalog',
+            readOnly: true
+        };
+
+        $scope.products = [
+            {name:"p1", sku: "sku1", price: 12.50, description: "desc1", catalog: "catalog1"},
+            {name:"p2", sku: "sku2", price: 12.57, description: "desc2", catalog: "catalog2"},
+            {name:"p3", sku: "sku3", price: 13.50, description: "desc3", catalog: "catalog3"},
+            {name:"p4", sku: "sku4", price: 14.78, description: "desc4", catalog: "catalog4"},
+
+        ];
+
+        $scope.fetchResult = function () {
+            $http.get('api/rs', {params: { cmd: encodeURIComponent(JSON.stringify($scope.getCatalog))}})
+                    .success(function (data, status, headers, config) {
+                        $scope.products = data;
+                    })
+        };
+        //$scope.fetchResult();
+    }]);
+</script>
+<style>
+    .badge {
+        background: #000;
+        color: #fff;
+    }
+
+    .cat {
+        padding-bottom: 14px;
+    }
+</style>
+
+<div class="container" ng-controller="com.networknt.light.CatalogHomeCtrl">
+  <div id="content"></div>
+  <script type="text/javascript" src="scripts/catalog.js"></script>
+</div> <!-- /container -->
