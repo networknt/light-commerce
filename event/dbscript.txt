@@ -1,40 +1,45 @@
-CREATE CLASS Catalog;
+CREATE CLASS Catalog extends V;
 CREATE PROPERTY Catalog.host STRING;
-CREATE PROPERTY Catalog.id STRING;
-CREATE PROPERTY Catalog.desc STRING;
-CREATE PROPERTY Catalog.parent LINK;
-CREATE PROPERTY Catalog.children LINKLIST;
+CREATE PROPERTY Catalog.catalogId STRING;
+CREATE PROPERTY Catalog.description STRING;
 CREATE PROPERTY Catalog.attributes EMBEDDEDMAP;
-CREATE PROPERTY Catalog.products LINKLIST;
 CREATE PROPERTY Catalog.createDate DATETIME;
-CREATE PROPERTY Catalog.createUserId STRING;
 CREATE PROPERTY Catalog.updateDate DATETIME;
-CREATE PROPERTY Catalog.updateUserId STRING;
-CREATE INDEX catalogHostIdIdx ON Catalog(host, id) UNIQUE;
+CREATE INDEX catalogHostIdIdx ON Catalog(host, catalogId) UNIQUE;
+CREATE INDEX Catalog.updateDate ON Catalog(updateDate) NOTUNIQUE;
 
-
-CREATE CLASS Product;
+CREATE CLASS Product extends V;
+CREATE PROPERTY Product.sku STRING;
 CREATE PROPERTY Product.host STRING;
-CREATE PROPERTY Product.id STRING;
 CREATE PROPERTY Product.name STRING;
-CREATE PROPERTY Product.desc STRING;
+CREATE PROPERTY Product.description STRING;
+CREATE PROPERTY Product.price DECIMAL,
 CREATE PROPERTY Product.attributes EMBEDDEDMAP;
-CREATE PROPERTY Product.upUsers LINKLIST;
-CREATE PROPERTY Product.downUsers LINKLIST;
-CREATE PROPERTY Product.comments LINKLIST;
+CREATE PROPERTY Product.rank INTEGER,
 CREATE PROPERTY Product.createDate DATETIME;
-CREATE PROPERTY Product.createUserId STRING;
 CREATE PROPERTY Product.updateDate DATETIME;
-CREATE PROPERTY Product.updateUserId STRING;
-CREATE INDEX productHostIdIdx ON Product(host, id) UNIQUE;
+CREATE INDEX Product.sku ON Product(sku) UNIQUE;
+CREATE INDEX Product.host ON Product(host) NOTUNIQUE;
+CREATE INDEX Product.name ON Product(name) NOTUNIQUE;
+
+CREATE CLASS HasProduct extends E;
 
 
-insert into Role(id,desc) VALUES ('catalogAdmin','Catalog Admin'),('productAdmin','Product Admin');
+create vertex Role set roleId = 'catalogAdmin', description = 'Catalog Admin'
+create vertex Role set roleId = 'productAdmin', description = 'Product Admin'
 
-insert into MenuItem(id, label, path) values
-('catalogAdmin', 'Catalog Admin', '/page/com-networknt-light-v-catalog-admin-home'),
-('productAdmin', 'Product Admin', '/page/com-networknt-light-v-product-admin-home');
+let catalogAdmin = create vertex MenuItem set menuItemId = 'catalogAdmin', label = 'Catalog Admin', path = '/page/com-networknt-light-v-catalog-admin-home'
+let productAdmin = create vertex MenuItem set menuItemId = 'productAdmin', label = 'Product Admin', path = '/page/com-networknt-light-v-product-admin-home'
+let catalog = create vertex MenuItem set menuItemId = 'catalog', label = 'Catalog', path = '/page/com-networknt-light-v-catalog-home', left = true, roles = 'anonymous'
+let admin = select from MenuItem where menuItemId = 'admin'
+create edge Own from $admin to $catalogAdmin
+create edge Own from $admin to $productAdmin
 
-insert into MenuItem(id, label, path, left, roles) values
-('catalog', 'Catalog', '/page/com-networknt-light-v-catalog-home', true, 'anonymous,user');
+let networknt = select from Menu where host = 'www.networknt.com'
+create edge Own from $networknt to $catalog
 
+let edibleforestgarden = select from Menu where host = 'www.edibleforestgarden.ca'
+create edge Own from $edibleforestgarden to $catalog
+
+let example = select from Menu where host = 'example'
+create edge Own from $example to $catalog

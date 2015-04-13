@@ -25,7 +25,7 @@
 
     <packaging>pom</packaging>
     <name>Light Parent POM</name>
-    <description>Light CMS</description>
+    <description>Light Commerce</description>
 
     <licenses>
         <license>
@@ -55,7 +55,7 @@
         <xnio.version>3.3.0.Beta1</xnio.version>
         <undertow.version>1.1.0.Beta6</undertow.version>
         <hazelcast.version>3.3</hazelcast.version>
-        <orientdb.version>2.0.3</orientdb.version>
+        <orientdb.version>2.1-SNAPSHOT</orientdb.version>
         <concurrentlinkedhashmap.version>1.4</concurrentlinkedhashmap.version>
         <jna.version>4.0.0</jna.version>
         <snappy.version>1.1.0.1</snappy.version>
@@ -82,7 +82,7 @@
     </properties>
 
     <modules>
-        <module>rule-cms</module>
+        <module>rule-commerce</module>
     </modules>
 
     <build>
@@ -417,8 +417,5 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
-
-
 </project>
 

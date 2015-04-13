@@ -14,23 +14,21 @@
  * limitations under the License.
  */
 
-package com.networknt.light.rule.category;
+package com.networknt.light.rule.catalog;
 
 import com.networknt.light.rule.Rule;
+import com.networknt.light.rule.catalog.AbstractCatalogRule;
 
 import java.util.Map;
 
 /**
- * Created by husteve on 10/14/2014.
+ * Created by steve on 10/14/2014.
  */
-public class AddCategoryEvRule extends AbstractCategoryRule implements Rule {
+public class AddCatalogEvRule extends AbstractCatalogRule implements Rule {
     public boolean execute (Object ...objects) throws Exception {
-        Map<String, Object> inputMap = (Map<String, Object>)objects[0];
-        Map<String, Object> data = (Map<String, Object>)inputMap.get("data");
-        Map<String, Object> payload = (Map<String, Object>) inputMap.get("payload");
-        Map<String, Object> user = (Map<String, Object>)payload.get("user");
-        String userId = (String)user.get("userId");
-        addCategory(data, userId);
+        Map<String, Object> eventMap = (Map<String, Object>) objects[0];
+        Map<String, Object> data = (Map<String, Object>) eventMap.get("data");
+        addCatalog(data);
         return true;
     }
 }
