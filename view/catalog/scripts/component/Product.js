@@ -30,11 +30,11 @@ var Product = React.createClass({
             <div className="col-4 col-sm-4 col-lg-3">
                 <img src={'/assets/images/' + this.props.product.image} className="img-responsive" />
                 <h3>{this.props.product.title}</h3>
-                <h4>{ price }</h4>
+                <h4>{ '$' + price }</h4>
                 <div className="cbp-vm-details">
                     {product.description}
                 </div>
-                <div>
+                <div className="cbp-vm-variants">
                     {(_.size(variants) > 1) ?
                     <VariantSelect {...variantProps} /> :
                     product.variants[i].type + ' $' + price}

@@ -2,6 +2,7 @@
  * Created by steve on 12/04/15.
  */
 var React = require('react');
+var ProductActionCreator = require('../action/ProductActionCreator');
 var ReactPropTypes = React.PropTypes;
 
 
@@ -18,7 +19,7 @@ var VariantSelect = React.createClass({
         });
         return (
             <select onChange={this._setProductVariant}>
-        {options}
+                {options}
             </select>
         );
     },
@@ -26,7 +27,7 @@ var VariantSelect = React.createClass({
     _setProductVariant: function(e) {
         var productId = this.props.id;
         var variantIndex = Number(e.target.value);
-        //ProductActionCreators.setProductVariant({productId, variantIndex});
+        ProductActionCreator.setProductVariant({productId, variantIndex});
     }
 
 });
