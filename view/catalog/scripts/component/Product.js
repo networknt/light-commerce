@@ -1,6 +1,8 @@
 /**
  * Created by steve on 12/04/15.
  */
+'use strict';
+
 var React = require('react');
 var ReactPropTypes = React.PropTypes;
 var ProductActionCreator = require('../action/ProductActionCreator');
@@ -28,8 +30,8 @@ var Product = React.createClass({
 
         return (
             <div className="col-4 col-sm-4 col-lg-3">
-                <img src={'/assets/images/' + this.props.product.image} className="img-responsive" />
-                <h3>{this.props.product.title}</h3>
+                <img src={'/assets/images/' + product.image} className="img-responsive" />
+                <h3>{product.title}</h3>
                 <h4>{ '$' + price }</h4>
                 <div className="cbp-vm-details">
                     {product.description}

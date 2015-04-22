@@ -5,10 +5,10 @@
 
 var EventEmitter = require('events').EventEmitter;
 var Dispatcher = require('../Dispatcher');
-var CartConstants = require('../Constant');
+var Constant = require('../Constant');
 var _ = require('lodash');
 
-var ActionTypes = CartConstants;
+var ActionTypes = Constant;
 var CHANGE_EVENT = 'change';
 
 var _cartItems = [];
