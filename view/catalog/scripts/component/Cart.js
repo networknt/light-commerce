@@ -14,8 +14,8 @@ var Cart = React.createClass({
 
     render: function() {
 
-        var cartItems = this.props.products.map(function(product) {
-            return <CartItem key={product.id} product={product} />
+        var cartItems = this.props.cartItems.map(function(cartItem) {
+            return <CartItem key={cartItem.id} cartItem={cartItem} />
         });
 
         return (
@@ -23,7 +23,7 @@ var Cart = React.createClass({
                 <thead>
                     <tr>
                         <th>Product</th>
-                        <th className="text-center">Price</th>
+                        <th className="text-center">Quantity</th>
                         <th className="text-center">Total</th>
                         <th></th>
                     </tr>

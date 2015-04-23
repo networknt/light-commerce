@@ -37,7 +37,7 @@ var CheckoutButton = React.createClass({
 
     render: function() {
         return (
-            <ModalTrigger modal={<CheckoutModal products={this.state.products} />}>
+            <ModalTrigger modal={<CheckoutModal cartItems={this.state.cartItems} cartTotal={this.state.cartTotal} />}>
                 <a href="#cart">
                     <span className="glyphicon glyphicon-shopping-cart"></span>
                     <span className="badge">{this.state.cartItemsCount}</span>

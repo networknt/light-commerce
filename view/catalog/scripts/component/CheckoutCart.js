@@ -8,7 +8,7 @@ var React = require('react')
 var CheckoutCart = React.createClass({
     render: function() {
         var buyButton
-        if (this.props.products.length > 0) {
+        if (this.props.cartItems.length > 0) {
             buyButton = (
                 <button type="button" className="btn btn-success" onClick={this.props.onCheckout}>
                     Buy now <span className="glyphicon glyphicon-play"></span>
@@ -19,7 +19,7 @@ var CheckoutCart = React.createClass({
         return (
             <div>
                 <div className="modal-body">
-                    <Cart products={ this.props.products } totalPrice={ this.props.totalPrice } />
+                    <Cart cartItems={ this.props.cartItems } totalPrice={ this.props.totalPrice } />
                 </div>
                 <div className="modal-footer">
                     <button type="button" className="btn btn-default" onClick={this.props.onRequestHide}>
