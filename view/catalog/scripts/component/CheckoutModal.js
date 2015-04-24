@@ -14,6 +14,7 @@ var CheckoutModal = React.createClass({
             cartItems={this.props.cartItems}
             onCheckout={this.onCheckout}
             totalPrice={ this.props.cartTotal.toFixed(2) }
+            onRequestHide={this.props.onRequestHide}
              />
         return <Modal {...this.props} title="Cart">{ contents }</Modal>;
     }

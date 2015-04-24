@@ -25,7 +25,7 @@ var CheckoutCart = React.createClass({
                     <button type="button" className="btn btn-default" onClick={this.props.onRequestHide}>
                         <span className="glyphicon glyphicon-shopping-cart"></span> Continue Shopping
                     </button>
-          {buyButton}
+                    {buyButton}
                 </div>
             </div>
         )
