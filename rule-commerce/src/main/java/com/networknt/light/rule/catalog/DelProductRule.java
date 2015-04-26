@@ -17,26 +17,24 @@
 package com.networknt.light.rule.catalog;
 
 import com.networknt.light.rule.Rule;
-import com.networknt.light.rule.catalog.AbstractCatalogRule;
-import com.networknt.light.server.DbService;
-import com.networknt.light.util.ServiceLocator;
-import com.orientechnologies.orient.core.record.impl.ODocument;
-import com.tinkerpop.blueprints.Vertex;
-import com.tinkerpop.blueprints.impls.orient.OrientGraph;
-
-import java.util.List;
-import java.util.Map;
 
 /**
- * Created by steve on 10/14/2014.
+ * Created by steve on 25/04/15.
  *
- * you can only delete a catalog if it has no child and no entity.
+ * productAdmin can only delete his or her products. However,
+ * owner, admin and catalogAdmin can delete product and all the comments/reivews relate to the
+ * product all together. This should not be done often only at extreme situation.
  *
- * AccessLevel R [owner, admin, catalogAdmin]
+ * Due to the implementation of orientdb delete graph scheduled for 2.2
+ * https://github.com/orientechnologies/orientdb/issues/1108
+ * We will be asking all the comments be deleted before deleting the product for now.
  *
+ * TODO fix it after orientdb 2.2
+ *
+ * AccessLevel R [owner, admin, catalogAdmin, productAdmin]
  */
-public class DelCatalogRule extends AbstractCatalogRule implements Rule {
+public class DelProductRule extends AbstractCatalogRule implements Rule {
     public boolean execute (Object ...objects) throws Exception {
-        return delBranch("catalog", objects);
+        return delProduct(objects);
     }
 }

@@ -9,9 +9,6 @@ import java.util.Map;
  */
 public class AddProductEvRule extends AbstractCatalogRule implements Rule {
     public boolean execute (Object ...objects) throws Exception {
-        Map<String, Object> eventMap = (Map<String, Object>) objects[0];
-        Map<String, Object> data = (Map<String, Object>) eventMap.get("data");
-        addProduct(data);
-        return true;
+        return addProductEv(objects);
     }
 }

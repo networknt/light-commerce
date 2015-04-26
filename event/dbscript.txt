@@ -9,21 +9,19 @@ CREATE INDEX catalogHostIdIdx ON Catalog(host, catalogId) UNIQUE;
 CREATE INDEX Catalog.updateDate ON Catalog(updateDate) NOTUNIQUE;
 
 CREATE CLASS Product extends V;
-CREATE PROPERTY Product.sku STRING;
-CREATE PROPERTY Product.host STRING;
+CREATE PROPERTY Product.productId STRING;
 CREATE PROPERTY Product.name STRING;
+CREATE PROPERTY Product.host STRING;
 CREATE PROPERTY Product.description STRING;
-CREATE PROPERTY Product.price DECIMAL,
 CREATE PROPERTY Product.attributes EMBEDDEDMAP;
-CREATE PROPERTY Product.rank INTEGER,
+CREATE PROPERTY Product.variants EMBEDDEDLIST;
 CREATE PROPERTY Product.createDate DATETIME;
 CREATE PROPERTY Product.updateDate DATETIME;
-CREATE INDEX Product.sku ON Product(sku) UNIQUE;
+CREATE INDEX Product.productId ON Product(productId) UNIQUE;
 CREATE INDEX Product.host ON Product(host) NOTUNIQUE;
 CREATE INDEX Product.name ON Product(name) NOTUNIQUE;
 
 CREATE CLASS HasProduct extends E;
-
 
 create vertex Role set roleId = 'catalogAdmin', description = 'Catalog Admin'
 create vertex Role set roleId = 'productAdmin', description = 'Product Admin'

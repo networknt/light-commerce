@@ -24,29 +24,13 @@ import java.util.Map;
 
 /**
  * Created by husteve on 10/14/2014.
+ *
+ * This is for catalog admin screen.
+ *
+ * AccessLevel R [owner, admin, catalogAdmin]
  */
 public class GetCatalogRule extends AbstractCatalogRule implements Rule {
     public boolean execute (Object ...objects) throws Exception {
-        Map<String, Object> inputMap = (Map<String, Object>) objects[0];
-        Map<String, Object> data = (Map<String, Object>)inputMap.get("data");
-        Map<String, Object> payload = (Map<String, Object>) inputMap.get("payload");
-        Map<String, Object> user = (Map<String, Object>) payload.get("user");
-        String host = (String)data.get("host");
-        Object userHost = user.get("host");
-        if(userHost != null && !userHost.equals(host)) {
-            inputMap.put("result", "You can only get catalog from host: " + host);
-            inputMap.put("responseCode", 403);
-            return false;
-        } else {
-            String docs = getCatalog(host);
-            if(docs != null) {
-                inputMap.put("result", docs);
-                return true;
-            } else {
-                inputMap.put("result", "No document can be found");
-                inputMap.put("responseCode", 404);
-                return false;
-            }
-        }
+        return getBranch("catalog", objects);
     }
 }

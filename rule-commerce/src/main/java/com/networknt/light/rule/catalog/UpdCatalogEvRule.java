@@ -24,13 +24,9 @@ import java.util.Map;
 /**
  * Created by steve on 10/14/2014.
  *
- * AccessLevel R [owner, admin, catalogAdmin]
  */
 public class UpdCatalogEvRule extends AbstractCatalogRule implements Rule {
     public boolean execute (Object ...objects) throws Exception {
-        Map<String, Object> inputMap = (Map<String, Object>) objects[0];
-        Map<String, Object> data = (Map<String, Object>) inputMap.get("data");
-        updCatalog(data);
-        return true;
+        return updBranchEv("catalog", objects);
     }
 }

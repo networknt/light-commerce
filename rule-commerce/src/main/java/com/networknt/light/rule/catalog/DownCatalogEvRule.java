@@ -17,26 +17,12 @@
 package com.networknt.light.rule.catalog;
 
 import com.networknt.light.rule.Rule;
-import com.networknt.light.rule.catalog.AbstractCatalogRule;
-import com.networknt.light.server.DbService;
-import com.networknt.light.util.ServiceLocator;
-import com.orientechnologies.orient.core.record.impl.ODocument;
-import com.tinkerpop.blueprints.Vertex;
-import com.tinkerpop.blueprints.impls.orient.OrientGraph;
-
-import java.util.List;
-import java.util.Map;
 
 /**
- * Created by steve on 10/14/2014.
- *
- * you can only delete a catalog if it has no child and no entity.
- *
- * AccessLevel R [owner, admin, catalogAdmin]
- *
+ * Created by steve on 25/04/15.
  */
-public class DelCatalogRule extends AbstractCatalogRule implements Rule {
+public class DownCatalogEvRule extends AbstractCatalogRule implements Rule {
     public boolean execute (Object ...objects) throws Exception {
-        return delBranch("catalog", objects);
+        return downBranchEv("catalog", objects);
     }
 }
