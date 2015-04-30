@@ -21,14 +21,13 @@ import com.networknt.light.rule.Rule;
 import java.util.Map;
 
 /**
- * Created by husteve on 10/14/2014.
+ * Created by steve on 26/04/15.
  */
-public class UpdProductEvRule extends AbstractProductRule implements Rule {
+public class DownProductEvRule extends AbstractProductRule implements Rule {
     public boolean execute (Object ...objects) throws Exception {
-        Map<String, Object> inputMap = (Map<String, Object>) objects[0];
-        Map<String, Object> data = (Map<String, Object>) inputMap.get("data");
-        String productRid = (String) data.get("@rid");
-        updProduct(productRid, data);
+        Map<String, Object> eventMap = (Map<String, Object>) objects[0];
+        Map<String, Object> data = (Map<String, Object>) eventMap.get("data");
+        downVoteProduct(data);
         return true;
     }
 }

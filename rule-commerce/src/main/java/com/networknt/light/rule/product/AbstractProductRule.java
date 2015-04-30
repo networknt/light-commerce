@@ -30,6 +30,12 @@ import com.orientechnologies.orient.core.metadata.schema.OSchema;
 import com.orientechnologies.orient.core.record.impl.ODocument;
 import com.orientechnologies.orient.core.serialization.serializer.OJSONWriter;
 import com.orientechnologies.orient.core.sql.query.OSQLSynchQuery;
+import com.tinkerpop.blueprints.Direction;
+import com.tinkerpop.blueprints.Edge;
+import com.tinkerpop.blueprints.impls.orient.OrientGraph;
+import com.tinkerpop.blueprints.impls.orient.OrientVertex;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -43,8 +49,55 @@ import java.util.concurrent.ConcurrentMap;
  */
 public abstract class AbstractProductRule extends AbstractRule implements Rule {
     ObjectMapper mapper = ServiceLocator.getInstance().getMapper();
+    static final Logger logger = LoggerFactory.getLogger(AbstractProductRule.class);
+
     public abstract boolean execute (Object ...objects) throws Exception;
 
+    protected void upVoteProduct(Map<String, Object> data) {
+        OrientGraph graph = ServiceLocator.getInstance().getGraph();
+        try {
+            graph.begin();
+            OrientVertex updateUser = (OrientVertex) graph.getVertexByKey("User.userId", data.remove("updateUserId"));
+            OrientVertex product = (OrientVertex) graph.getVertexByKey("Product.productId", data.get("productId"));
+            if (product != null && updateUser != null) {
+                // remove DownVote edge if there is.
+                for (Edge edge : updateUser.getEdges(product, Direction.OUT, "DownVote")) {
+                    if (edge.getVertex(Direction.IN).equals(product)) graph.removeEdge(edge);
+                }
+                updateUser.addEdge("UpVote", product);
+            }
+            graph.commit();
+        } catch (Exception e) {
+            logger.error("Exception:", e);
+            graph.rollback();
+        } finally {
+            graph.shutdown();
+        }
+    }
+
+    protected void downVoteProduct(Map<String, Object> data) {
+        OrientGraph graph = ServiceLocator.getInstance().getGraph();
+        try {
+            graph.begin();
+            OrientVertex updateUser = (OrientVertex) graph.getVertexByKey("User.userId", data.remove("updateUserId"));
+            OrientVertex product = (OrientVertex) graph.getVertexByKey("Product.productId", data.get("productId"));
+            if (product != null && updateUser != null) {
+                // remove UpVote edge if there is.
+                for (Edge edge : updateUser.getEdges(product, Direction.OUT, "UpVote")) {
+                    if (edge.getVertex(Direction.IN).equals(product)) graph.removeEdge(edge);
+                }
+                updateUser.addEdge("DownVote", product);
+            }
+            graph.commit();
+        } catch (Exception e) {
+            logger.error("Exception:", e);
+            graph.rollback();
+        } finally {
+            graph.shutdown();
+        }
+    }
+
+    /*
     protected ODocument getProductByHostName(String host, String name) {
         ODocument product = null;
         ODatabaseDocumentTx db = ServiceLocator.getInstance().getDb();
@@ -269,4 +322,6 @@ public abstract class AbstractProductRule extends AbstractRule implements Rule {
         productMap.put(host, hostMap);
         return hostMap;
     }
+    */
+
 }
