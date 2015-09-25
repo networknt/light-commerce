@@ -26,14 +26,12 @@ CREATE CLASS HasProduct extends E;
 CREATE CLASS Carrier extends V;
 CREATE PROPERTY Carrier.name STRING;
 CREATE PROPERTY Carrier.host STRING;
-CREATE PROPERTY Product.description STRING;
-CREATE PROPERTY Product.attributes EMBEDDEDMAP;
-CREATE PROPERTY Product.variants EMBEDDEDLIST;
-CREATE PROPERTY Product.createDate DATETIME;
-CREATE PROPERTY Product.updateDate DATETIME;
-CREATE INDEX Product.productId ON Product(productId) UNIQUE;
-CREATE INDEX Product.host ON Product(host) NOTUNIQUE;
-CREATE INDEX Product.name ON Product(name) NOTUNIQUE;
+CREATE PROPERTY Carrier.description STRING;
+CREATE PROPERTY Carrier.attributes EMBEDDEDMAP;
+CREATE PROPERTY Carrier.createDate DATETIME;
+CREATE PROPERTY Carrier.updateDate DATETIME;
+CREATE INDEX Carrier.host ON Carrier(host) NOTUNIQUE;
+CREATE INDEX Carrier.name ON Carrier(name) UNIQUE;
 
 
 

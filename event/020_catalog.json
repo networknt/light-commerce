@@ -1,55 +1,55 @@
 [
   {
     "@type": "d",
-    "@rid": "#17:101",
+    "@rid": "#18:9",
     "@version": 1,
     "@class": "Event",
-    "eventId": 10102,
+    "eventId": 10010,
     "createUserId": "stevehu",
     "data": {
       "host": "example",
-      "description": "Computer Components",
+      "description": "Computer Component",
       "createUserId": "stevehu",
       "catalogId": "computer",
-      "createDate": "2015-05-01T01:06:13.788"
+      "createDate": "2015-09-25T02:32:54.765"
     },
     "name": "addCatalog",
     "category": "catalog",
-    "createDate": "2015-05-01T01:06:13.788",
-    "catalogId": "vH1jKriGQtK8NygbeLurAw",
+    "createDate": "2015-09-25T02:32:54.765",
+    "catalogId": "IP3C-AEvQB6mMbh7LMJH4w",
     "ipAddress": "127.0.0.1",
     "@fieldTypes": "eventId=l,createDate=t"
   },
   {
     "@type": "d",
-    "@rid": "#17:102",
+    "@rid": "#18:10",
     "@version": 1,
     "@class": "Event",
-    "eventId": 10103,
+    "eventId": 10011,
     "createUserId": "stevehu",
     "data": {
       "host": "example",
-      "description": "Case",
+      "description": "Computer Case",
       "createUserId": "stevehu",
       "catalogId": "case",
       "in_Own": [
         "computer"
       ],
-      "createDate": "2015-05-01T01:06:35.369"
+      "createDate": "2015-09-25T02:33:25.915"
     },
     "name": "addCatalog",
     "category": "catalog",
-    "createDate": "2015-05-01T01:06:35.369",
-    "catalogId": "zF3PZ8hsQX-OZCoggcG1Gg",
+    "createDate": "2015-09-25T02:33:25.915",
+    "catalogId": "aaEwp3FPSa-gZPzLJpRgWw",
     "ipAddress": "127.0.0.1",
     "@fieldTypes": "eventId=l,createDate=t"
   },
   {
     "@type": "d",
-    "@rid": "#17:103",
+    "@rid": "#18:11",
     "@version": 1,
     "@class": "Event",
-    "eventId": 10104,
+    "eventId": 10012,
     "createUserId": "stevehu",
     "data": {
       "host": "example",
@@ -59,21 +59,21 @@
       "in_Own": [
         "computer"
       ],
-      "createDate": "2015-05-01T01:07:02.504"
+      "createDate": "2015-09-25T02:33:49.007"
     },
     "name": "addCatalog",
     "category": "catalog",
-    "createDate": "2015-05-01T01:07:02.504",
-    "catalogId": "b_-Q8iE7TxiwoQKQlQ0ueg",
+    "createDate": "2015-09-25T02:33:49.007",
+    "catalogId": "rD_YooyzQ9uI_Eu2uh5evA",
     "ipAddress": "127.0.0.1",
     "@fieldTypes": "eventId=l,createDate=t"
   },
   {
     "@type": "d",
-    "@rid": "#17:104",
+    "@rid": "#18:12",
     "@version": 1,
     "@class": "Event",
-    "eventId": 10105,
+    "eventId": 10013,
     "createUserId": "stevehu",
     "data": {
       "host": "example",
@@ -83,21 +83,21 @@
       "in_Own": [
         "case"
       ],
-      "createDate": "2015-05-01T01:07:36.197"
+      "createDate": "2015-09-25T02:34:11.850"
     },
     "name": "addCatalog",
     "category": "catalog",
-    "createDate": "2015-05-01T01:07:36.197",
-    "catalogId": "_guabWQ_TdW4ZbPJ9ZlwjA",
+    "createDate": "2015-09-25T02:34:11.850",
+    "catalogId": "xHv-1FiaRlK4ykf4DsY79A",
     "ipAddress": "127.0.0.1",
     "@fieldTypes": "eventId=l,createDate=t"
   },
   {
     "@type": "d",
-    "@rid": "#17:105",
+    "@rid": "#18:13",
     "@version": 1,
     "@class": "Event",
-    "eventId": 10106,
+    "eventId": 10014,
     "createUserId": "stevehu",
     "data": {
       "host": "example",
@@ -107,1234 +107,278 @@
       "in_Own": [
         "case"
       ],
-      "createDate": "2015-05-01T01:07:50.516"
+      "createDate": "2015-09-25T02:34:29.776"
     },
     "name": "addCatalog",
     "category": "catalog",
-    "createDate": "2015-05-01T01:07:50.516",
-    "catalogId": "CIxByqF9QdminkPbzmTmmA",
+    "createDate": "2015-09-25T02:34:29.776",
+    "catalogId": "HCQp0DTaS4eL7jWj7yuqTw",
     "ipAddress": "127.0.0.1",
     "@fieldTypes": "eventId=l,createDate=t"
   },
   {
     "@type": "d",
-    "@rid": "#17:529",
+    "@rid": "#18:5",
     "@version": 1,
     "@class": "Event",
-    "eventId": 10531,
-    "createUserId": "stevehu",
-    "data": {
-      "updateDate": "2015-08-25T02:31:48.719",
-      "@class": "Catalog",
-      "updateUserId": "stevehu",
-      "@type": "d",
-      "description": "Computer Components",
-      "@fieldTypes": "createDate=t,in_Create=g,out_Own=g",
-      "@rid": "#42:0",
-      "catalogId": "computer",
-      "@version": 3,
-      "host": "example",
-      "in_Create": [
-        "#14:0"
-      ],
-      "out_Own": [
-        "#42:1",
-        "#42:2"
-      ],
-      "createDate": "2015-05-01T01:06:13.788"
-    },
-    "name": "updCatalog",
-    "category": "catalog",
-    "createDate": "2015-08-25T02:31:48.719",
-    "ipAddress": "127.0.0.1",
-    "@fieldTypes": "eventId=l,createDate=t"
-  },
-  {
-    "@type": "d",
-    "@rid": "#17:538",
-    "@version": 1,
-    "@class": "Event",
-    "eventId": 10540,
-    "createUserId": "stevehu",
-    "data": {
-      "updateDate": "2015-08-25T02:41:02.374",
-      "@class": "Catalog",
-      "in_Update": [
-        "#14:0"
-      ],
-      "updateUserId": "stevehu",
-      "@type": "d",
-      "description": "Computer Components",
-      "@fieldTypes": "createDate=t,updateDate=t,in_Create=g,out_Own=g,in_Update=g",
-      "@rid": "#42:0",
-      "catalogId": "computer",
-      "@version": 5,
-      "host": "example",
-      "in_Create": [
-        "#14:0"
-      ],
-      "out_Own": [
-        "#42:1",
-        "#42:2"
-      ],
-      "createDate": "2015-05-01T01:06:13.788"
-    },
-    "name": "updCatalog",
-    "category": "catalog",
-    "createDate": "2015-08-25T02:41:02.374",
-    "ipAddress": "127.0.0.1",
-    "@fieldTypes": "eventId=l,createDate=t"
-  },
-  {
-    "@type": "d",
-    "@rid": "#17:547",
-    "@version": 1,
-    "@class": "Event",
-    "eventId": 10549,
-    "createUserId": "stevehu",
-    "data": {
-      "updateDate": "2015-08-25T02:44:38.807",
-      "@class": "Catalog",
-      "in_Update": [
-        "#14:0"
-      ],
-      "updateUserId": "stevehu",
-      "@type": "d",
-      "description": "Computer Components",
-      "@fieldTypes": "createDate=t,updateDate=t,in_Create=g,out_Own=g,in_Update=g",
-      "@rid": "#42:0",
-      "catalogId": "computer",
-      "@version": 5,
-      "host": "example",
-      "in_Create": [
-        "#14:0"
-      ],
-      "out_Own": [
-        "#42:1",
-        "#42:2"
-      ],
-      "createDate": "2015-05-01T01:06:13.788"
-    },
-    "name": "updCatalog",
-    "category": "catalog",
-    "createDate": "2015-08-25T02:44:38.807",
-    "ipAddress": "127.0.0.1",
-    "@fieldTypes": "eventId=l,createDate=t"
-  },
-  {
-    "@type": "d",
-    "@rid": "#17:548",
-    "@version": 1,
-    "@class": "Event",
-    "eventId": 10550,
-    "createUserId": "stevehu",
-    "data": {
-      "updateDate": "2015-08-25T02:44:52.361",
-      "@class": "Catalog",
-      "in_Update": [
-        "#14:0",
-        "#14:0",
-        "#14:0"
-      ],
-      "updateUserId": "stevehu",
-      "@type": "d",
-      "description": "Computer Components",
-      "@fieldTypes": "createDate=t,updateDate=t,in_Create=g,out_Own=g,in_Update=g",
-      "@rid": "#42:0",
-      "catalogId": "computer",
-      "@version": 9,
-      "host": "example",
-      "in_Create": [
-        "#14:0"
-      ],
-      "out_Own": [
-        "#42:1",
-        "#42:2"
-      ],
-      "createDate": "2015-05-01T01:06:13.788"
-    },
-    "name": "updCatalog",
-    "category": "catalog",
-    "createDate": "2015-08-25T02:44:52.361",
-    "ipAddress": "127.0.0.1",
-    "@fieldTypes": "eventId=l,createDate=t"
-  },
-  {
-    "@type": "d",
-    "@rid": "#17:556",
-    "@version": 1,
-    "@class": "Event",
-    "eventId": 10558,
-    "createUserId": "stevehu",
-    "data": {
-      "updateDate": "2015-08-25T02:48:29.096",
-      "@class": "Catalog",
-      "in_Update": [
-        "#14:0",
-        "#14:0",
-        "#14:0",
-        "#14:0"
-      ],
-      "updateUserId": "stevehu",
-      "@type": "d",
-      "description": "Computer Components",
-      "@fieldTypes": "createDate=t,updateDate=t,in_Create=g,out_Own=g,in_Update=g",
-      "@rid": "#42:0",
-      "catalogId": "computer",
-      "@version": 11,
-      "host": "example",
-      "in_Create": [
-        "#14:0"
-      ],
-      "out_Own": [
-        "#42:1",
-        "#42:2"
-      ],
-      "createDate": "2015-05-01T01:06:13.788"
-    },
-    "name": "updCatalog",
-    "category": "catalog",
-    "createDate": "2015-08-25T02:48:29.096",
-    "ipAddress": "127.0.0.1",
-    "@fieldTypes": "eventId=l,createDate=t"
-  },
-  {
-    "@type": "d",
-    "@rid": "#17:559",
-    "@version": 1,
-    "@class": "Event",
-    "eventId": 10561,
-    "createUserId": "stevehu",
-    "data": {
-      "updateDate": "2015-08-25T02:50:51.242",
-      "@class": "Catalog",
-      "in_Update": [
-        "#14:0",
-        "#14:0",
-        "#14:0",
-        "#14:0",
-        "#14:0"
-      ],
-      "updateUserId": "stevehu",
-      "@type": "d",
-      "description": "Computer Components",
-      "@fieldTypes": "createDate=t,updateDate=t,in_Create=g,out_Own=g,in_Update=g",
-      "@rid": "#42:0",
-      "catalogId": "computer",
-      "@version": 13,
-      "host": "example",
-      "in_Create": [
-        "#14:0"
-      ],
-      "out_Own": [
-        "#42:1",
-        "#42:2"
-      ],
-      "createDate": "2015-05-01T01:06:13.788"
-    },
-    "name": "updCatalog",
-    "category": "catalog",
-    "createDate": "2015-08-25T02:50:51.242",
-    "ipAddress": "127.0.0.1",
-    "@fieldTypes": "eventId=l,createDate=t"
-  },
-  {
-    "@type": "d",
-    "@rid": "#17:560",
-    "@version": 1,
-    "@class": "Event",
-    "eventId": 10562,
-    "createUserId": "stevehu",
-    "data": {
-      "updateDate": "2015-08-25T02:52:15.559",
-      "@class": "Catalog",
-      "in_Update": [
-        "#14:0",
-        "#14:0",
-        "#14:0",
-        "#14:0",
-        "#14:0",
-        "#14:0"
-      ],
-      "updateUserId": "stevehu",
-      "@type": "d",
-      "description": "Computer Components",
-      "@fieldTypes": "createDate=t,updateDate=t,in_Create=g,out_Own=g,in_Update=g",
-      "@rid": "#42:0",
-      "catalogId": "computer",
-      "@version": 15,
-      "host": "example",
-      "in_Create": [
-        "#14:0"
-      ],
-      "out_Own": [
-        "#42:1",
-        "#42:2"
-      ],
-      "createDate": "2015-05-01T01:06:13.788"
-    },
-    "name": "updCatalog",
-    "category": "catalog",
-    "createDate": "2015-08-25T02:52:15.559",
-    "ipAddress": "127.0.0.1",
-    "@fieldTypes": "eventId=l,createDate=t"
-  },
-  {
-    "@type": "d",
-    "@rid": "#17:564",
-    "@version": 1,
-    "@class": "Event",
-    "eventId": 10566,
-    "createUserId": "stevehu",
-    "data": {
-      "updateDate": "2015-08-26T00:30:52.193",
-      "@class": "Catalog",
-      "in_Update": [
-        "#14:0",
-        "#14:0",
-        "#14:0",
-        "#14:0",
-        "#14:0",
-        "#14:0",
-        "#14:0"
-      ],
-      "updateUserId": "stevehu",
-      "@type": "d",
-      "description": "Computer Components",
-      "@fieldTypes": "createDate=t,updateDate=t,in_Create=g,out_Own=g,in_Update=g",
-      "@rid": "#42:0",
-      "catalogId": "computer",
-      "@version": 17,
-      "host": "example",
-      "in_Create": [
-        "#14:0"
-      ],
-      "out_Own": [
-        "#42:1",
-        "#42:2"
-      ],
-      "createDate": "2015-05-01T01:06:13.788"
-    },
-    "name": "updCatalog",
-    "category": "catalog",
-    "createDate": "2015-08-26T00:30:52.193",
-    "ipAddress": "127.0.0.1",
-    "@fieldTypes": "eventId=l,createDate=t"
-  },
-  {
-    "@type": "d",
-    "@rid": "#17:880",
-    "@version": 1,
-    "@class": "Event",
-    "eventId": 10882,
+    "eventId": 10006,
     "createUserId": "stevehu",
     "data": {
       "createUserId": "stevehu",
-      "@class": "Product",
-      "productId": "7GaZXLAbRuG6klKicY7e1w",
-      "@type": "d",
-      "description": "hp",
-      "@fieldTypes": "createDate=t,in_Create=g",
-      "variants": [
-        {
-          "sku": "111",
-          "price": 2321,
-          "type": "23dfd",
-          "image": "dsfdf",
-          "inventory": 12
-        }
-      ],
-      "@rid": "#43:70",
-      "catalogId": "computer",
-      "@version": 2,
-      "name": "hp",
+      "productId": "dqGTGzAcSAOYWujmWmnGLA",
+      "name": "HP",
       "host": "example",
-      "in_Create": [
-        "#14:0"
-      ],
-      "createDate": "2015-08-27T03:01:47.318"
-    },
-    "name": "addProduct",
-    "category": "catalog",
-    "createDate": "2015-08-27T03:01:41.276",
-    "ipAddress": "127.0.0.1",
-    "@fieldTypes": "eventId=l,createDate=t"
-  },
-  {
-    "@type": "d",
-    "@rid": "#17:881",
-    "@version": 1,
-    "@class": "Event",
-    "eventId": 10883,
-    "createUserId": "stevehu",
-    "data": {
-      "createUserId": "stevehu",
-      "@class": "Product",
-      "productId": "Gq5j5tpwRwW5bSKMmWu4Iw",
-      "@type": "d",
-      "description": "hp1",
-      "@fieldTypes": "createDate=t,in_Create=g",
+      "description": "HP Computer",
       "variants": [
         {
-          "sku": "111",
-          "price": 2321,
-          "type": "23dfd",
-          "image": "dsfdf",
-          "inventory": 12
-        }
-      ],
-      "@rid": "#43:70",
-      "catalogId": "computer",
-      "@version": 2,
-      "name": "hp1",
-      "host": "example",
-      "in_Create": [
-        "#14:0"
-      ],
-      "createDate": "2015-08-27T03:05:29.887"
-    },
-    "name": "addProduct",
-    "category": "catalog",
-    "createDate": "2015-08-27T03:05:29.886",
-    "ipAddress": "127.0.0.1",
-    "@fieldTypes": "eventId=l,createDate=t"
-  },
-  {
-    "@type": "d",
-    "@rid": "#17:884",
-    "@version": 1,
-    "@class": "Event",
-    "eventId": 10886,
-    "createUserId": "stevehu",
-    "data": {
-      "createUserId": "stevehu",
-      "@class": "Product",
-      "productId": "-T_TLumTQb2pJcMwIEY2Bw",
-      "@type": "d",
-      "description": "hp2",
-      "@fieldTypes": "createDate=t,in_Create=g",
-      "variants": [
-        {
-          "sku": "111",
-          "price": 2321,
-          "type": "23dfd",
-          "image": "dsfdf",
-          "inventory": 12
-        }
-      ],
-      "@rid": "#43:70",
-      "catalogId": "computer",
-      "@version": 2,
-      "name": "hp2",
-      "host": "example",
-      "in_Create": [
-        "#14:0"
-      ],
-      "createDate": "2015-08-27T03:06:56.417"
-    },
-    "name": "addProduct",
-    "category": "catalog",
-    "createDate": "2015-08-27T03:06:56.417",
-    "ipAddress": "127.0.0.1",
-    "@fieldTypes": "eventId=l,createDate=t"
-  },
-  {
-    "@type": "d",
-    "@rid": "#17:887",
-    "@version": 1,
-    "@class": "Event",
-    "eventId": 10889,
-    "createUserId": "stevehu",
-    "data": {
-      "createUserId": "stevehu",
-      "@class": "Product",
-      "productId": "mwyRFyUyTeOjGUV6nwJMdQ",
-      "@type": "d",
-      "description": "hp3",
-      "@fieldTypes": "createDate=t,in_Create=g",
-      "variants": [
-        {
-          "sku": "111",
-          "price": 2321,
-          "type": "23dfd",
-          "image": "dsfdf",
-          "inventory": 12
-        }
-      ],
-      "@rid": "#43:70",
-      "catalogId": "computer",
-      "@version": 2,
-      "name": "hp3",
-      "host": "example",
-      "in_Create": [
-        "#14:0"
-      ],
-      "createDate": "2015-08-27T03:12:12.038"
-    },
-    "name": "addProduct",
-    "category": "catalog",
-    "createDate": "2015-08-27T03:12:12.038",
-    "ipAddress": "127.0.0.1",
-    "@fieldTypes": "eventId=l,createDate=t"
-  },
-  {
-    "@type": "d",
-    "@rid": "#17:890",
-    "@version": 1,
-    "@class": "Event",
-    "eventId": 10892,
-    "createUserId": "stevehu",
-    "data": {
-      "createUserId": "stevehu",
-      "@class": "Product",
-      "productId": "QSdwyHyFR3S3gstXNjOljg",
-      "@type": "d",
-      "description": "hp3",
-      "@fieldTypes": "createDate=t,in_Create=g",
-      "variants": [
-        {
-          "sku": "111",
-          "price": 2321,
-          "type": "23dfd",
-          "image": "dsfdf",
-          "inventory": 12
-        }
-      ],
-      "@rid": "#43:70",
-      "catalogId": "computer",
-      "@version": 2,
-      "name": "hp3",
-      "host": "example",
-      "in_Create": [
-        "#14:0"
-      ],
-      "createDate": "2015-08-27T03:16:11.091"
-    },
-    "name": "addProduct",
-    "category": "catalog",
-    "createDate": "2015-08-27T03:16:11.090",
-    "ipAddress": "127.0.0.1",
-    "@fieldTypes": "eventId=l,createDate=t"
-  },
-  {
-    "@type": "d",
-    "@rid": "#17:891",
-    "@version": 1,
-    "@class": "Event",
-    "eventId": 10893,
-    "createUserId": "stevehu",
-    "data": {
-      "createUserId": "stevehu",
-      "@class": "Product",
-      "productId": "FC3bTS99RMqDg-w5p4xD5Q",
-      "@type": "d",
-      "description": "hp3",
-      "@fieldTypes": "createDate=t,in_Create=g",
-      "variants": [
-        {
-          "sku": "111",
-          "price": 2321,
-          "type": "23dfd",
-          "image": "dsfdf",
-          "inventory": 12
-        }
-      ],
-      "@rid": "#43:70",
-      "catalogId": "computer",
-      "@version": 2,
-      "name": "hp3",
-      "host": "example",
-      "in_Create": [
-        "#14:0"
-      ],
-      "createDate": "2015-08-27T03:16:45.592"
-    },
-    "name": "addProduct",
-    "category": "catalog",
-    "createDate": "2015-08-27T03:16:45.592",
-    "ipAddress": "127.0.0.1",
-    "@fieldTypes": "eventId=l,createDate=t"
-  },
-  {
-    "@type": "d",
-    "@rid": "#17:895",
-    "@version": 1,
-    "@class": "Event",
-    "eventId": 10897,
-    "createUserId": "stevehu",
-    "data": {
-      "createUserId": "stevehu",
-      "@class": "Product",
-      "productId": "oegrf5VnT5y_JnvNzpGR_A",
-      "@type": "d",
-      "description": "hp3",
-      "@fieldTypes": "createDate=t,in_Create=g",
-      "variants": [
-        {
-          "sku": "111",
-          "price": 2321,
-          "type": "23dfd",
-          "image": "dsfdf",
-          "inventory": 12
-        }
-      ],
-      "@rid": "#43:70",
-      "catalogId": "computer",
-      "@version": 2,
-      "name": "hp3",
-      "host": "example",
-      "in_Create": [
-        "#14:0"
-      ],
-      "createDate": "2015-08-27T03:19:35.163"
-    },
-    "name": "addProduct",
-    "category": "catalog",
-    "createDate": "2015-08-27T03:19:35.163",
-    "ipAddress": "127.0.0.1",
-    "@fieldTypes": "eventId=l,createDate=t"
-  },
-  {
-    "@type": "d",
-    "@rid": "#17:898",
-    "@version": 1,
-    "@class": "Event",
-    "eventId": 10900,
-    "createUserId": "stevehu",
-    "data": {
-      "createUserId": "stevehu",
-      "@class": "Product",
-      "productId": "8JOLa2gETYOhALpjmVGqLA",
-      "@type": "d",
-      "description": "hp3",
-      "@fieldTypes": "createDate=t,in_Create=g",
-      "variants": [
-        {
-          "sku": "111",
-          "price": 2321,
-          "type": "23dfd",
-          "image": "dsfdf",
-          "inventory": 12
-        }
-      ],
-      "@rid": "#43:70",
-      "catalogId": "computer",
-      "@version": 2,
-      "name": "hp3",
-      "host": "example",
-      "in_Create": [
-        "#14:0"
-      ],
-      "createDate": "2015-08-27T03:21:30.158"
-    },
-    "name": "addProduct",
-    "category": "catalog",
-    "createDate": "2015-08-27T03:21:30.157",
-    "ipAddress": "127.0.0.1",
-    "@fieldTypes": "eventId=l,createDate=t"
-  },
-  {
-    "@type": "d",
-    "@rid": "#17:900",
-    "@version": 1,
-    "@class": "Event",
-    "eventId": 10902,
-    "createUserId": "stevehu",
-    "data": {
-      "createUserId": "stevehu",
-      "catalogId": "computer",
-      "productId": "mnbUV3rRRSW7JO5p7hmR9A",
-      "name": "hp",
-      "host": "example",
-      "description": "hp",
-      "variants": [
-        {
-          "sku": "111",
-          "price": 111,
-          "type": "111",
-          "image": "111",
-          "inventory": 111
-        }
-      ],
-      "createDate": "2015-08-27T03:32:34.754"
-    },
-    "name": "addProduct",
-    "category": "catalog",
-    "createDate": "2015-08-27T03:32:34.754",
-    "ipAddress": "127.0.0.1",
-    "@fieldTypes": "eventId=l,createDate=t"
-  },
-  {
-    "@type": "d",
-    "@rid": "#17:925",
-    "@version": 1,
-    "@class": "Event",
-    "eventId": 10927,
-    "createUserId": "stevehu",
-    "data": {
-      "updateDate": "2015-08-29T00:56:16.623",
-      "productId": "DcRopSJUSxajuTRjK02Jxw",
-      "updateUserId": "stevehu",
-      "name": "dell",
-      "description": "dell",
-      "variants": [
-        {
-          "sku": "11",
-          "price": 232,
-          "type": "23dfd",
-          "image": "dsfdf",
-          "inventory": 1
-        }
-      ]
-    },
-    "name": "updProduct",
-    "category": "catalog",
-    "createDate": "2015-08-29T00:56:16.622",
-    "ipAddress": "127.0.0.1",
-    "@fieldTypes": "eventId=l,createDate=t"
-  },
-  {
-    "@type": "d",
-    "@rid": "#17:927",
-    "@version": 1,
-    "@class": "Event",
-    "eventId": 10929,
-    "createUserId": "stevehu",
-    "data": {
-      "updateDate": "2015-08-29T01:01:22.863",
-      "productId": "mnbUV3rRRSW7JO5p7hmR9A",
-      "updateUserId": "stevehu",
-      "name": "hp",
-      "description": "hp",
-      "variants": [
-        {
-          "sku": "111",
-          "price": 34,
-          "type": "type",
-          "image": "/image/1.jpg",
-          "inventory": 12
-        }
-      ]
-    },
-    "name": "updProduct",
-    "category": "catalog",
-    "createDate": "2015-08-29T01:01:22.863",
-    "ipAddress": "127.0.0.1",
-    "@fieldTypes": "eventId=l,createDate=t"
-  },
-  {
-    "@type": "d",
-    "@rid": "#17:929",
-    "@version": 1,
-    "@class": "Event",
-    "eventId": 10931,
-    "createUserId": "stevehu",
-    "data": {
-      "updateDate": "2015-08-29T10:00:52.760",
-      "productId": "mnbUV3rRRSW7JO5p7hmR9A",
-      "updateUserId": "stevehu",
-      "name": "hp",
-      "description": "hp",
-      "variants": [
-        {
-          "sku": "111",
-          "price": 34,
-          "type": "type",
-          "image": "1.jpg",
-          "inventory": 12
-        }
-      ]
-    },
-    "name": "updProduct",
-    "category": "catalog",
-    "createDate": "2015-08-29T10:00:52.760",
-    "ipAddress": "127.0.0.1",
-    "@fieldTypes": "eventId=l,createDate=t"
-  },
-  {
-    "@type": "d",
-    "@rid": "#17:931",
-    "@version": 1,
-    "@class": "Event",
-    "eventId": 10933,
-    "createUserId": "stevehu",
-    "data": {
-      "updateDate": "2015-08-29T10:16:41.688",
-      "productId": "mnbUV3rRRSW7JO5p7hmR9A",
-      "updateUserId": "stevehu",
-      "name": "hp desktop",
-      "description": "hp computer is the best",
-      "variants": [
-        {
-          "sku": "111",
-          "price": 34,
-          "type": "desktop",
+          "sku": "1001",
+          "price": 1290,
+          "type": "Desktop",
           "image": "1.png",
-          "inventory": 12
-        }
-      ]
-    },
-    "name": "updProduct",
-    "category": "catalog",
-    "createDate": "2015-08-29T10:16:41.688",
-    "ipAddress": "127.0.0.1",
-    "@fieldTypes": "eventId=l,createDate=t"
-  },
-  {
-    "@type": "d",
-    "@rid": "#17:934",
-    "@version": 1,
-    "@class": "Event",
-    "eventId": 10936,
-    "createUserId": "stevehu",
-    "data": {
-      "updateDate": "2015-08-29T10:34:12.152",
-      "productId": "DcRopSJUSxajuTRjK02Jxw",
-      "updateUserId": "stevehu",
-      "name": "dell",
-      "description": "dell",
-      "variants": [
+          "inventory": 12,
+          "weight": 22,
+          "height": 20,
+          "width": 6,
+          "length": 14
+        },
         {
-          "sku": "11",
-          "price": 209,
-          "type": "Desktop",
+          "sku": "1002",
+          "price": 890,
+          "type": "Laptop",
           "image": "2.png",
-          "inventory": 1
-        },
+          "inventory": 3,
+          "weight": 5.8,
+          "height": 2,
+          "width": 15,
+          "length": 8
+        }
+      ],
+      "in_HasProduct": [
+        "computer"
+      ],
+      "createDate": "2015-09-25T02:02:53.507"
+    },
+    "name": "addProduct",
+    "category": "catalog",
+    "createDate": "2015-09-25T02:02:53.507",
+    "ipAddress": "127.0.0.1",
+    "@fieldTypes": "eventId=l,createDate=t"
+  },
+  {
+    "@type": "d",
+    "@rid": "#18:7",
+    "@version": 1,
+    "@class": "Event",
+    "eventId": 10008,
+    "createUserId": "stevehu",
+    "data": {
+      "createUserId": "stevehu",
+      "productId": "5E_MKOQdR3qENvnNwG-T-g",
+      "name": "IBM Computer",
+      "host": "example",
+      "description": "IBM Computer is the best in the world",
+      "variants": [
         {
-          "sku": "22",
-          "price": 222,
-          "type": "Notebook",
+          "sku": "2001",
+          "price": 1390,
+          "type": "Desktop",
           "image": "3.png",
-          "inventory": 1
-        }
-      ]
-    },
-    "name": "updProduct",
-    "category": "catalog",
-    "createDate": "2015-08-29T10:34:12.152",
-    "ipAddress": "127.0.0.1",
-    "@fieldTypes": "eventId=l,createDate=t"
-  },
-  {
-    "@type": "d",
-    "@rid": "#17:936",
-    "@version": 1,
-    "@class": "Event",
-    "eventId": 10938,
-    "createUserId": "stevehu",
-    "data": {
-      "createUserId": "stevehu",
-      "catalogId": "computer",
-      "productId": "KYjT54dNTQ2iiolzy0TUUA",
-      "name": "Asus",
-      "host": "example",
-      "description": "Asus Desktop is good",
-      "variants": [
-        {
-          "sku": "11",
-          "price": 232,
-          "type": "Desktop",
-          "image": "4.png",
-          "inventory": 11
-        },
-        {
-          "sku": "22",
-          "price": 332,
-          "type": "Notebook",
-          "image": "5.png",
-          "inventory": 2
+          "inventory": 2,
+          "weight": 33,
+          "height": 12,
+          "width": 22,
+          "length": 19
         }
       ],
-      "createDate": "2015-08-29T10:49:25.506"
+      "in_HasProduct": [
+        "computer"
+      ],
+      "createDate": "2015-09-25T02:04:39.210"
     },
     "name": "addProduct",
     "category": "catalog",
-    "createDate": "2015-08-29T10:49:25.506",
+    "createDate": "2015-09-25T02:04:39.210",
     "ipAddress": "127.0.0.1",
     "@fieldTypes": "eventId=l,createDate=t"
   },
   {
     "@type": "d",
-    "@rid": "#17:937",
+    "@rid": "#18:8",
     "@version": 1,
     "@class": "Event",
-    "eventId": 10939,
+    "eventId": 10009,
     "createUserId": "stevehu",
     "data": {
       "createUserId": "stevehu",
-      "catalogId": "computer",
-      "productId": "dn6_ptdQSCiNO0T5f6xupQ",
-      "name": "Lenovo",
-      "host": "example",
-      "description": "Lenovo Computer",
-      "variants": [
-        {
-          "sku": "11",
-          "price": 222,
-          "type": "Desktop",
-          "image": "5.png",
-          "inventory": 22
-        },
-        {
-          "sku": "33",
-          "price": 290,
-          "type": "Notebook",
-          "image": "6.png",
-          "inventory": 3
-        }
-      ],
-      "createDate": "2015-08-29T10:51:13.605"
-    },
-    "name": "addProduct",
-    "category": "catalog",
-    "createDate": "2015-08-29T10:51:13.605",
-    "ipAddress": "127.0.0.1",
-    "@fieldTypes": "eventId=l,createDate=t"
-  },
-  {
-    "@type": "d",
-    "@rid": "#17:938",
-    "@version": 1,
-    "@class": "Event",
-    "eventId": 10940,
-    "createUserId": "stevehu",
-    "data": {
-      "createUserId": "stevehu",
-      "catalogId": "computer",
-      "productId": "ZptpITWgRjyXnnoPVfQewQ",
-      "name": "IBM",
-      "host": "example",
-      "description": "IBM computer",
-      "variants": [
-        {
-          "sku": "3423",
-          "price": 322,
-          "type": "Server",
-          "image": "7.png",
-          "inventory": 1
-        },
-        {
-          "sku": "9320",
-          "price": 3993,
-          "type": "Mainframe",
-          "image": "6.png",
-          "inventory": 1
-        }
-      ],
-      "createDate": "2015-08-29T10:52:25.275"
-    },
-    "name": "addProduct",
-    "category": "catalog",
-    "createDate": "2015-08-29T10:52:25.275",
-    "ipAddress": "127.0.0.1",
-    "@fieldTypes": "eventId=l,createDate=t"
-  },
-  {
-    "@type": "d",
-    "@rid": "#17:939",
-    "@version": 1,
-    "@class": "Event",
-    "eventId": 10941,
-    "createUserId": "stevehu",
-    "data": {
-      "createUserId": "stevehu",
-      "catalogId": "computer",
-      "productId": "mVd36vVITNSVhGfK7jysIw",
+      "productId": "x3EQMrqTSWaslqdvBvs6gg",
       "name": "Acer",
       "host": "example",
-      "description": "Acer computer",
+      "description": "Acer Case has most reasonable price",
       "variants": [
         {
-          "sku": "399",
-          "price": 3893,
-          "type": "RISS",
-          "image": "8.png",
-          "inventory": 3
-        }
-      ],
-      "createDate": "2015-08-29T10:53:19.857"
-    },
-    "name": "addProduct",
-    "category": "catalog",
-    "createDate": "2015-08-29T10:53:19.857",
-    "ipAddress": "127.0.0.1",
-    "@fieldTypes": "eventId=l,createDate=t"
-  },
-  {
-    "@type": "d",
-    "@rid": "#17:940",
-    "@version": 1,
-    "@class": "Event",
-    "eventId": 10942,
-    "createUserId": "stevehu",
-    "data": {
-      "createUserId": "stevehu",
-      "catalogId": "hardDrive",
-      "productId": "AV0hgVdST2W_X7TWNDZGHw",
-      "name": "Seagate",
-      "host": "example",
-      "description": "Seagate Hard Drive",
-      "variants": [
-        {
-          "sku": "33433",
-          "price": 13,
-          "type": "Disk",
-          "image": "3.png",
-          "inventory": 33
-        },
-        {
-          "sku": "3343",
-          "price": 939,
-          "type": "SSD",
+          "sku": "3001",
+          "price": 120,
+          "type": "Desktop",
           "image": "4.png",
-          "inventory": 2
+          "inventory": 22,
+          "weight": 11,
+          "height": 12,
+          "width": 29,
+          "length": 12
         }
       ],
-      "createDate": "2015-08-29T10:54:40.795"
+      "in_HasProduct": [
+        "case"
+      ],
+      "createDate": "2015-09-25T02:06:13.597"
     },
     "name": "addProduct",
     "category": "catalog",
-    "createDate": "2015-08-29T10:54:40.795",
+    "createDate": "2015-09-25T02:06:13.597",
     "ipAddress": "127.0.0.1",
     "@fieldTypes": "eventId=l,createDate=t"
   },
   {
     "@type": "d",
-    "@rid": "#17:941",
+    "@rid": "#18:9",
     "@version": 1,
     "@class": "Event",
-    "eventId": 10943,
+    "eventId": 10010,
     "createUserId": "stevehu",
     "data": {
       "createUserId": "stevehu",
-      "catalogId": "case",
-      "productId": "GoThD0ESQH-fJZ9PyO_wHg",
-      "name": "Black Eagle",
+      "productId": "8mrI0DmoSCGMcdlX1E2zRQ",
+      "name": "Dell",
       "host": "example",
-      "description": "Black Eagle Computer case",
+      "description": "Dell Desktop Case",
       "variants": [
         {
-          "sku": "3334",
-          "price": 93,
-          "type": "USB",
-          "image": "3.png",
-          "inventory": 33
-        }
-      ],
-      "createDate": "2015-08-29T10:55:28.181"
-    },
-    "name": "addProduct",
-    "category": "catalog",
-    "createDate": "2015-08-29T10:55:28.181",
-    "ipAddress": "127.0.0.1",
-    "@fieldTypes": "eventId=l,createDate=t"
-  },
-  {
-    "@type": "d",
-    "@rid": "#17:942",
-    "@version": 1,
-    "@class": "Event",
-    "eventId": 10944,
-    "createUserId": "stevehu",
-    "data": {
-      "createUserId": "stevehu",
-      "catalogId": "serverCase",
-      "productId": "15-2jwPKTo6H2xKP6NqYVA",
-      "name": "Lenovo Server Case",
-      "host": "example",
-      "description": "Server case which is the best in price",
-      "variants": [
-        {
-          "sku": "33",
-          "price": 48,
-          "type": "USB",
-          "image": "5.png",
-          "inventory": 399
-        }
-      ],
-      "createDate": "2015-08-29T10:56:22.617"
-    },
-    "name": "addProduct",
-    "category": "catalog",
-    "createDate": "2015-08-29T10:56:22.617",
-    "ipAddress": "127.0.0.1",
-    "@fieldTypes": "eventId=l,createDate=t"
-  },
-  {
-    "@type": "d",
-    "@rid": "#17:943",
-    "@version": 1,
-    "@class": "Event",
-    "eventId": 10945,
-    "createUserId": "stevehu",
-    "data": {
-      "createUserId": "stevehu",
-      "catalogId": "case",
-      "productId": "JcuUkT5nRnCd_ViTeJMD7A",
-      "name": "Generic Case",
-      "host": "example",
-      "description": "No Name",
-      "variants": [
-        {
-          "sku": "3432",
-          "price": 33,
-          "type": "USB",
-          "image": "2.png",
-          "inventory": 38
-        }
-      ],
-      "createDate": "2015-08-29T10:57:08.892"
-    },
-    "name": "addProduct",
-    "category": "catalog",
-    "createDate": "2015-08-29T10:57:08.892",
-    "ipAddress": "127.0.0.1",
-    "@fieldTypes": "eventId=l,createDate=t"
-  },
-  {
-    "@type": "d",
-    "@rid": "#17:1000",
-    "@version": 1,
-    "@class": "Event",
-    "eventId": 11002,
-    "createUserId": "stevehu",
-    "data": {
-      "updateDate": "2015-08-30T15:02:04.447",
-      "productId": "mnbUV3rRRSW7JO5p7hmR9A",
-      "updateUserId": "stevehu",
-      "name": "hp desktop",
-      "description": "hp computer is the best",
-      "variants": [
-        {
-          "sku": "111",
-          "price": 970,
-          "type": "desktop",
-          "image": "1.png",
-          "inventory": 12
-        }
-      ]
-    },
-    "name": "updProduct",
-    "category": "catalog",
-    "createDate": "2015-08-30T15:02:04.447",
-    "ipAddress": "127.0.0.1",
-    "@fieldTypes": "eventId=l,createDate=t"
-  },
-  {
-    "@type": "d",
-    "@rid": "#17:1003",
-    "@version": 1,
-    "@class": "Event",
-    "eventId": 11005,
-    "createUserId": "stevehu",
-    "data": {
-      "createUserId": "stevehu",
-      "productId": "OFsEnbfWRkyg4vPTHaROWw",
-      "name": "My Desktop Case",
-      "host": "example",
-      "description": "This is the desktop case I made myself",
-      "variants": [
-        {
-          "sku": "989393",
-          "price": 123,
+          "sku": "4001",
+          "price": 100,
           "type": "Black",
-          "image": "4.png",
-          "inventory": 1
+          "image": "5.png",
+          "inventory": 11,
+          "weight": 29,
+          "height": 12,
+          "width": 14,
+          "length": 9
         },
         {
-          "sku": "2343213",
-          "price": 123,
+          "sku": "4002",
+          "price": 100,
           "type": "White",
-          "image": "5.png",
-          "inventory": 1
+          "image": "6.png",
+          "inventory": 22,
+          "weight": 12,
+          "height": 12,
+          "width": 23,
+          "length": 4
         }
       ],
       "in_HasProduct": [
         "desktopCase"
       ],
-      "createDate": "2015-08-30T15:04:28.585"
+      "createDate": "2015-09-25T02:08:25.150"
     },
     "name": "addProduct",
     "category": "catalog",
-    "createDate": "2015-08-30T15:04:28.585",
+    "createDate": "2015-09-25T02:08:25.150",
     "ipAddress": "127.0.0.1",
     "@fieldTypes": "eventId=l,createDate=t"
   },
   {
     "@type": "d",
-    "@rid": "#17:1015",
+    "@rid": "#18:10",
     "@version": 1,
     "@class": "Event",
-    "eventId": 11017,
+    "eventId": 10011,
     "createUserId": "stevehu",
     "data": {
-      "updateDate": "2015-09-01T01:48:31.566",
-      "productId": "DcRopSJUSxajuTRjK02Jxw",
-      "updateUserId": "stevehu",
-      "name": "dell",
-      "description": "dell",
+      "createUserId": "stevehu",
+      "productId": "dp48Gjz9SligBuKo-LqEAg",
+      "name": "Sun",
+      "host": "example",
+      "description": "Sun Server Case",
       "variants": [
         {
-          "sku": "11",
-          "price": 209,
-          "type": "Desktop",
-          "image": "2.png",
+          "sku": "5001",
+          "price": 234,
+          "type": "USB",
+          "image": "7.png",
           "inventory": 1,
-          "weight": 1,
-          "height": 5,
-          "width": 10,
-          "length": 36
+          "weight": 129,
+          "height": 22,
+          "width": 11,
+          "length": 8
         },
         {
-          "sku": "22",
-          "price": 222,
-          "type": "Notebook",
-          "image": "3.png",
-          "inventory": 1,
-          "weight": 2,
-          "height": 4,
-          "width": 12,
-          "length": 36
+          "sku": "5002",
+          "price": 883,
+          "type": "SCSI",
+          "image": "8.png",
+          "inventory": 23,
+          "weight": 299,
+          "height": 19,
+          "width": 34,
+          "length": 8
         }
-      ]
+      ],
+      "in_HasProduct": [
+        "serverCase"
+      ],
+      "createDate": "2015-09-25T02:10:37.631"
     },
-    "name": "updProduct",
+    "name": "addProduct",
     "category": "catalog",
-    "createDate": "2015-09-01T01:48:31.566",
+    "createDate": "2015-09-25T02:10:37.631",
     "ipAddress": "127.0.0.1",
     "@fieldTypes": "eventId=l,createDate=t"
   },
   {
     "@type": "d",
-    "@rid": "#17:1016",
+    "@rid": "#18:11",
     "@version": 1,
     "@class": "Event",
-    "eventId": 11018,
+    "eventId": 10012,
     "createUserId": "stevehu",
     "data": {
-      "updateDate": "2015-09-01T01:48:50.211",
-      "productId": "mnbUV3rRRSW7JO5p7hmR9A",
-      "updateUserId": "stevehu",
-      "name": "hp desktop",
-      "description": "hp computer is the best",
+      "createUserId": "stevehu",
+      "productId": "pu9Hn3vLSgmcfdECwJsHig",
+      "name": "Seagate",
+      "host": "example",
+      "description": "Seagate Drive",
       "variants": [
         {
-          "sku": "111",
-          "price": 970,
-          "type": "desktop",
-          "image": "1.png",
-          "inventory": 12,
-          "weight": 0.4,
-          "height": 1,
-          "width": 1,
+          "sku": "6001",
+          "price": 123,
+          "type": "Disk",
+          "image": "8.png",
+          "inventory": 11,
+          "weight": 1.3,
+          "height": 1.5,
+          "width": 12,
           "length": 10
+        },
+        {
+          "sku": "6002",
+          "price": 345,
+          "type": "SSD",
+          "image": "9.png",
+          "inventory": 11,
+          "weight": 6,
+          "height": 9,
+          "width": 6,
+          "length": 6
         }
-      ]
+      ],
+      "in_HasProduct": [
+        "hardDrive"
+      ],
+      "createDate": "2015-09-25T02:12:15.688"
     },
-    "name": "updProduct",
+    "name": "addProduct",
     "category": "catalog",
-    "createDate": "2015-09-01T01:48:50.211",
+    "createDate": "2015-09-25T02:12:15.688",
     "ipAddress": "127.0.0.1",
     "@fieldTypes": "eventId=l,createDate=t"
   }
