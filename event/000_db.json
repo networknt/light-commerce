@@ -44,7 +44,7 @@
     "createUserId": "stevehu",
     "data": {
       "createUserId": "stevehu",
-      "script": "CREATE CLASS Order extends V;\nCREATE PROPERTY Order.orderId LONG;\nCREATE PROPERTY Order.paymentStatus INT DEFAULT 0; //0 pending, 1 paid, 2 Cancelled, 3 Refunded\nCREATE PROPERTY Order.fulfillmentStatus INT DEFAULT 0; // 0 pending, 1 processing, 2 shipped, 3 delivered, 4 willnotdeliver, 5 returned\nCREATE PROPERTY Order.host STRING;\nCREATE PROPERTY Order.subTotal DECIMAL;\nCREATE PROPERTY Order.shipping DECIMAL;\nCREATE PROPERTY Order.tax DECIMAL;\nCREATE PROPERTY Order.total DECIMAL;\nCREATE PROPERTY Order.items EMBEDDEDLIST;\nCREATE PROPERTY Order.createDate DATETIME;\nCREATE PROPERTY Order.updateDate DATETIME;\nCREATE INDEX Order.host ON Order(host) NOTUNIQUE;\nCREATE INDEX Order.orderId ON Order(orderId) UNIQUE;\n",
+      "script": "CREATE CLASS Order extends V;\nCREATE PROPERTY Order.orderId LONG;\nCREATE PROPERTY Order.paymentStatus INTEGER;\nALTER PROPERTY Order.paymentStatus DEFAULT 0;\nCREATE PROPERTY Order.fulfillmentStatus INTEGER;\nALTER PROPERTY Order.fulfillmentStatus DEFAULT 0;\nCREATE PROPERTY Order.host STRING;\nCREATE PROPERTY Order.subTotal DECIMAL;\nCREATE PROPERTY Order.shipping DECIMAL;\nCREATE PROPERTY Order.tax DECIMAL;\nCREATE PROPERTY Order.total DECIMAL;\nCREATE PROPERTY Order.items EMBEDDEDLIST;\nCREATE PROPERTY Order.createDate DATETIME;\nCREATE PROPERTY Order.updateDate DATETIME;\nCREATE INDEX Order.host ON Order(host) NOTUNIQUE;\nCREATE INDEX Order.orderId ON Order(orderId) UNIQUE;\n",
       "createDate": "2015-12-20T16:04:27.203"
     },
     "name": "execSchemaCmd",

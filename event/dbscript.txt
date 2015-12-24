@@ -35,8 +35,12 @@ CREATE INDEX Carrier.name ON Carrier(name) UNIQUE;
 
 CREATE CLASS Order extends V;
 CREATE PROPERTY Order.orderId LONG;
-CREATE PROPERTY Order.paymentStatus INT DEFAULT 0; //0 pending, 1 paid, 2 Cancelled, 3 Refunded
-CREATE PROPERTY Order.fulfillmentStatus INT DEFAULT 0; // 0 pending, 1 processing, 2 shipped, 3 delivered, 4 willnotdeliver, 5 returned
+//0 pending, 1 paid, 2 Cancelled, 3 Refunded
+CREATE PROPERTY Order.paymentStatus INTEGER;
+ALTER PROPERTY Order.paymentStatus DEFAULT 0;
+// 0 pending, 1 processing, 2 shipped, 3 delivered, 4 willnotdeliver, 5 returned
+CREATE PROPERTY Order.fulfillmentStatus INTEGER;
+ALTER PROPERTY Order.fulfillmentStatus DEFAULT 0;
 CREATE PROPERTY Order.host STRING;
 CREATE PROPERTY Order.subTotal DECIMAL;
 CREATE PROPERTY Order.shipping DECIMAL;
