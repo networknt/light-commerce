@@ -34,5 +34,41 @@
     "createDate": "2015-09-24T02:25:11.607",
     "ipAddress": "127.0.0.1",
     "@fieldTypes": "eventId=l,createDate=t"
+  },
+  {
+    "@type": "d",
+    "@rid": "#18:1489",
+    "@version": 1,
+    "@class": "Event",
+    "eventId": 11490,
+    "createUserId": "stevehu",
+    "data": {
+      "createUserId": "stevehu",
+      "script": "CREATE CLASS Order extends V;\nCREATE PROPERTY Order.orderId LONG;\nCREATE PROPERTY Order.paymentStatus INT DEFAULT 0; //0 pending, 1 paid, 2 Cancelled, 3 Refunded\nCREATE PROPERTY Order.fulfillmentStatus INT DEFAULT 0; // 0 pending, 1 processing, 2 shipped, 3 delivered, 4 willnotdeliver, 5 returned\nCREATE PROPERTY Order.host STRING;\nCREATE PROPERTY Order.subTotal DECIMAL;\nCREATE PROPERTY Order.shipping DECIMAL;\nCREATE PROPERTY Order.tax DECIMAL;\nCREATE PROPERTY Order.total DECIMAL;\nCREATE PROPERTY Order.items EMBEDDEDLIST;\nCREATE PROPERTY Order.createDate DATETIME;\nCREATE PROPERTY Order.updateDate DATETIME;\nCREATE INDEX Order.host ON Order(host) NOTUNIQUE;\nCREATE INDEX Order.orderId ON Order(orderId) UNIQUE;\n",
+      "createDate": "2015-12-20T16:04:27.203"
+    },
+    "name": "execSchemaCmd",
+    "category": "db",
+    "createDate": "2015-12-20T16:04:27.203",
+    "ipAddress": "127.0.0.1",
+    "@fieldTypes": "eventId=l,createDate=t"
+  },
+  {
+    "@type": "d",
+    "@rid": "#18:1487",
+    "@version": 1,
+    "@class": "Event",
+    "eventId": 11488,
+    "createUserId": "stevehu",
+    "data": {
+      "createUserId": "stevehu",
+      "script": "create vertex Counter set name = 'orderId', value = 10000\n",
+      "createDate": "2015-12-20T15:45:40.107"
+    },
+    "name": "execUpdateCmd",
+    "category": "db",
+    "createDate": "2015-12-20T15:45:40.107",
+    "ipAddress": "127.0.0.1",
+    "@fieldTypes": "eventId=l,createDate=t"
   }
 ]

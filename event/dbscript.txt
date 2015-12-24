@@ -33,7 +33,22 @@ CREATE PROPERTY Carrier.updateDate DATETIME;
 CREATE INDEX Carrier.host ON Carrier(host) NOTUNIQUE;
 CREATE INDEX Carrier.name ON Carrier(name) UNIQUE;
 
+CREATE CLASS Order extends V;
+CREATE PROPERTY Order.orderId LONG;
+CREATE PROPERTY Order.paymentStatus INT DEFAULT 0; //0 pending, 1 paid, 2 Cancelled, 3 Refunded
+CREATE PROPERTY Order.fulfillmentStatus INT DEFAULT 0; // 0 pending, 1 processing, 2 shipped, 3 delivered, 4 willnotdeliver, 5 returned
+CREATE PROPERTY Order.host STRING;
+CREATE PROPERTY Order.subTotal DECIMAL;
+CREATE PROPERTY Order.shipping DECIMAL;
+CREATE PROPERTY Order.tax DECIMAL;
+CREATE PROPERTY Order.total DECIMAL;
+CREATE PROPERTY Order.items EMBEDDEDLIST;
+CREATE PROPERTY Order.createDate DATETIME;
+CREATE PROPERTY Order.updateDate DATETIME;
+CREATE INDEX Order.host ON Order(host) NOTUNIQUE;
+CREATE INDEX Order.orderId ON Order(orderId) UNIQUE;
 
+create vertex Counter set name = 'orderId', value = 10000
 
 
 create vertex Role set roleId = 'catalogAdmin', description = 'Catalog Admin'

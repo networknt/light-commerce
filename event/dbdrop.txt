@@ -1,3 +1,4 @@
 Drop CLASS Catalog;
 Drop CLASS Product;
 Drop CLASS HasProduct;
+Drop CLASS Order;
