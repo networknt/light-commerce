@@ -1,11 +1,11 @@
 CREATE CLASS Catalog extends V;
 CREATE PROPERTY Catalog.host STRING;
-CREATE PROPERTY Catalog.catalogId STRING;
+CREATE PROPERTY Catalog.categoryId STRING;
 CREATE PROPERTY Catalog.description STRING;
 CREATE PROPERTY Catalog.attributes EMBEDDEDMAP;
 CREATE PROPERTY Catalog.createDate DATETIME;
 CREATE PROPERTY Catalog.updateDate DATETIME;
-CREATE INDEX catalogHostIdIdx ON Catalog(host, catalogId) UNIQUE;
+CREATE INDEX catalogHostIdIdx ON Catalog(host, categoryId) UNIQUE;
 CREATE INDEX Catalog.updateDate ON Catalog(updateDate) NOTUNIQUE;
 
 CREATE CLASS Product extends V;

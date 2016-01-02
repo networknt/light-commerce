@@ -10,13 +10,13 @@
       "host": "example",
       "description": "Computer Component",
       "createUserId": "stevehu",
-      "catalogId": "computer",
+      "categoryId": "computer",
       "createDate": "2015-09-25T02:32:54.765"
     },
     "name": "addCatalog",
     "category": "catalog",
     "createDate": "2015-09-25T02:32:54.765",
-    "catalogId": "IP3C-AEvQB6mMbh7LMJH4w",
+    "categoryId": "IP3C-AEvQB6mMbh7LMJH4w",
     "ipAddress": "127.0.0.1",
     "@fieldTypes": "eventId=l,createDate=t"
   },
@@ -31,7 +31,7 @@
       "host": "example",
       "description": "Computer Case",
       "createUserId": "stevehu",
-      "catalogId": "case",
+      "categoryId": "case",
       "in_Own": [
         "computer"
       ],
@@ -40,7 +40,7 @@
     "name": "addCatalog",
     "category": "catalog",
     "createDate": "2015-09-25T02:33:25.915",
-    "catalogId": "aaEwp3FPSa-gZPzLJpRgWw",
+    "categoryId": "aaEwp3FPSa-gZPzLJpRgWw",
     "ipAddress": "127.0.0.1",
     "@fieldTypes": "eventId=l,createDate=t"
   },
@@ -55,7 +55,7 @@
       "host": "example",
       "description": "Hard Drive",
       "createUserId": "stevehu",
-      "catalogId": "hardDrive",
+      "categoryId": "hardDrive",
       "in_Own": [
         "computer"
       ],
@@ -64,7 +64,7 @@
     "name": "addCatalog",
     "category": "catalog",
     "createDate": "2015-09-25T02:33:49.007",
-    "catalogId": "rD_YooyzQ9uI_Eu2uh5evA",
+    "categoryId": "rD_YooyzQ9uI_Eu2uh5evA",
     "ipAddress": "127.0.0.1",
     "@fieldTypes": "eventId=l,createDate=t"
   },
@@ -79,7 +79,7 @@
       "host": "example",
       "description": "Desktop Case",
       "createUserId": "stevehu",
-      "catalogId": "desktopCase",
+      "categoryId": "desktopCase",
       "in_Own": [
         "case"
       ],
@@ -88,7 +88,7 @@
     "name": "addCatalog",
     "category": "catalog",
     "createDate": "2015-09-25T02:34:11.850",
-    "catalogId": "xHv-1FiaRlK4ykf4DsY79A",
+    "categoryId": "xHv-1FiaRlK4ykf4DsY79A",
     "ipAddress": "127.0.0.1",
     "@fieldTypes": "eventId=l,createDate=t"
   },
@@ -103,7 +103,7 @@
       "host": "example",
       "description": "Server Case",
       "createUserId": "stevehu",
-      "catalogId": "serverCase",
+      "categoryId": "serverCase",
       "in_Own": [
         "case"
       ],
@@ -112,7 +112,7 @@
     "name": "addCatalog",
     "category": "catalog",
     "createDate": "2015-09-25T02:34:29.776",
-    "catalogId": "HCQp0DTaS4eL7jWj7yuqTw",
+    "categoryId": "HCQp0DTaS4eL7jWj7yuqTw",
     "ipAddress": "127.0.0.1",
     "@fieldTypes": "eventId=l,createDate=t"
   },

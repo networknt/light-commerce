@@ -16,7 +16,7 @@ var CatalogPage = React.createClass({displayName: "CatalogPage",
     loadCatalogFromServer: function() {
         $.ajax({
             url      : this.props.url,
-            data     : {cmd: "{\"readOnly\": true, \"category\":\"catalog\",\"name\":\"getCatalogProduct\", \"data\": {\"host\":\"example\",\"catalogId\":\"computer\",\"pageSize\":" + this.props.perPage +",\"pageNo\": " + this.state.offset + "}}"},
+            data     : {cmd: "{\"readOnly\": true, \"category\":\"catalog\",\"name\":\"getCatalogProduct\", \"data\": {\"host\":\"example\",\"categoryId\":\"computer\",\"pageSize\":" + this.props.perPage +",\"pageNo\": " + this.state.offset + "}}"},
             //data: {cmd: this.props.perPage},
             dataType : 'json',
             type     : 'GET',

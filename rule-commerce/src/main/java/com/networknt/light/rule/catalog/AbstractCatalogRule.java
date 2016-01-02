@@ -101,7 +101,7 @@ public abstract class AbstractCatalogRule extends BranchRule implements Rule {
 
     protected void addProductDb(Map<String, Object> data) throws Exception {
         String className = "Catalog";
-        String id = "catalogId";
+        String id = "categoryId";
         String index = className + "." + id;
         String host = (String)data.get("host");
         OrientGraph graph = ServiceLocator.getInstance().getGraph();
@@ -198,7 +198,7 @@ public abstract class AbstractCatalogRule extends BranchRule implements Rule {
 
     protected void delProductDb(Map<String, Object> data) throws Exception {
         String className = "Catalog";
-        String id = "catalogId";
+        String id = "categoryId";
         String index = className + "." + id;
         OrientGraph graph = ServiceLocator.getInstance().getGraph();
         try{
@@ -362,19 +362,19 @@ public abstract class AbstractCatalogRule extends BranchRule implements Rule {
         String rid = (String)data.get("@rid");
         String host = (String)data.get("host");
         if(rid == null) {
-            // check if catalogId exists and convert it to rid.
-            String catalogId = (String)data.get("catalogId");
-            if(catalogId == null) {
-                inputMap.put("result", "@rid or catalogId is required");
+            // check if categoryId exists and convert it to rid.
+            String categoryId = (String)data.get("categoryId");
+            if(categoryId == null) {
+                inputMap.put("result", "@rid or categoryId is required");
                 inputMap.put("responseCode", 400);
                 return false;
             } else {
-                // find out rid from catalogId
+                // find out rid from categoryId
                 OrientGraph graph = ServiceLocator.getInstance().getGraph();
                 try {
-                    OrientVertex catalog = getBranchByHostId(graph, "catalog", host, catalogId);
+                    OrientVertex catalog = getBranchByHostId(graph, "catalog", host, categoryId);
                     if(catalog == null) {
-                        inputMap.put("result", "CatalogId "  + catalogId + " doesn't exist on host " + host);
+                        inputMap.put("result", "categoryId "  + categoryId + " doesn't exist on host " + host);
                         inputMap.put("responseCode", 400);
                     } else {
                         rid = catalog.getId().toString();
@@ -514,7 +514,7 @@ public abstract class AbstractCatalogRule extends BranchRule implements Rule {
 
     protected List getAncestorDb(String rid) {
         List<Map<String, Object>> ancestors = null;
-        String sql = "select @rid, catalogId, description from (traverse in('Own') from ?)";
+        String sql = "select @rid, categoryId, description from (traverse in('Own') from ?)";
         OrientGraph graph = ServiceLocator.getInstance().getGraph();
         try {
             OSQLSynchQuery<ODocument> query = new OSQLSynchQuery<ODocument>(sql);
@@ -527,7 +527,7 @@ public abstract class AbstractCatalogRule extends BranchRule implements Rule {
                     String id = doc.getProperty("rid").toString();
                     id = id.substring(id.indexOf('[') + 1, id.indexOf(']'));
                     map.put("rid", id);
-                    map.put("catalogId", doc.getProperty("catalogId"));
+                    map.put("categoryId", doc.getProperty("categoryId"));
                     map.put("description", doc.getProperty("description"));
                     ancestors.add(map);
                 }

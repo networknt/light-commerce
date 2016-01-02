@@ -48,13 +48,13 @@ public class CatalogRuleTest extends TestCase {
     String delExamCatalog = "{\"readOnly\":false,\"category\":\"catalog\",\"name\":\"delCatalog\",\"data\":{\"host\":\"www.example.com\"}}";
 
 
-    String addExamCatalog1 = "{\"readOnly\":false,\"category\":\"catalog\",\"name\":\"addCatalog\",\"data\":{\"host\":\"www.example.com\",\"catalogId\":\"catalog1\",\"description\":\"catalog1\"}}";
-    String addExamCatalog11 = "{\"readOnly\":false,\"category\":\"catalog\",\"name\":\"addCatalog\",\"data\":{\"host\":\"www.example.com\",\"catalogId\":\"catalog11\",\"description\":\"catalog11\"}}";
-    String addExamCatalog12 = "{\"readOnly\":false,\"category\":\"catalog\",\"name\":\"addCatalog\",\"data\":{\"host\":\"www.example.com\",\"catalogId\":\"catalog12\",\"description\":\"catalog12\"}}";
-    String addExamCatalog111 = "{\"readOnly\":false,\"category\":\"catalog\",\"name\":\"addCatalog\",\"data\":{\"host\":\"www.example.com\",\"catalogId\":\"catalog111\",\"description\":\"catalog111\"}}";
-    String addExamCatalog121 = "{\"readOnly\":false,\"category\":\"catalog\",\"name\":\"addCatalog\",\"data\":{\"host\":\"www.example.com\",\"catalogId\":\"catalog121\",\"description\":\"catalog121\"}}";
-    String addExamCatalog112 = "{\"readOnly\":false,\"category\":\"catalog\",\"name\":\"addCatalog\",\"data\":{\"host\":\"www.example.com\",\"catalogId\":\"catalog112\",\"description\":\"catalog112\"}}";
-    String addExamCatalog2 = "{\"readOnly\":false,\"category\":\"catalog\",\"name\":\"addCatalog\",\"data\":{\"host\":\"www.example.com\",\"catalogId\":\"catalog2\",\"description\":\"catalog2\"}}";
+    String addExamCatalog1 = "{\"readOnly\":false,\"category\":\"catalog\",\"name\":\"addCatalog\",\"data\":{\"host\":\"www.example.com\",\"categoryId\":\"catalog1\",\"description\":\"catalog1\"}}";
+    String addExamCatalog11 = "{\"readOnly\":false,\"category\":\"catalog\",\"name\":\"addCatalog\",\"data\":{\"host\":\"www.example.com\",\"categoryId\":\"catalog11\",\"description\":\"catalog11\"}}";
+    String addExamCatalog12 = "{\"readOnly\":false,\"category\":\"catalog\",\"name\":\"addCatalog\",\"data\":{\"host\":\"www.example.com\",\"categoryId\":\"catalog12\",\"description\":\"catalog12\"}}";
+    String addExamCatalog111 = "{\"readOnly\":false,\"category\":\"catalog\",\"name\":\"addCatalog\",\"data\":{\"host\":\"www.example.com\",\"categoryId\":\"catalog111\",\"description\":\"catalog111\"}}";
+    String addExamCatalog121 = "{\"readOnly\":false,\"category\":\"catalog\",\"name\":\"addCatalog\",\"data\":{\"host\":\"www.example.com\",\"categoryId\":\"catalog121\",\"description\":\"catalog121\"}}";
+    String addExamCatalog112 = "{\"readOnly\":false,\"category\":\"catalog\",\"name\":\"addCatalog\",\"data\":{\"host\":\"www.example.com\",\"categoryId\":\"catalog112\",\"description\":\"catalog112\"}}";
+    String addExamCatalog2 = "{\"readOnly\":false,\"category\":\"catalog\",\"name\":\"addCatalog\",\"data\":{\"host\":\"www.example.com\",\"categoryId\":\"catalog2\",\"description\":\"catalog2\"}}";
 
     String updExamCatalog = "{\"readOnly\":false,\"category\":\"catalog\",\"name\":\"updCatalog\",\"data\":{\"host\":\"www.example.com\"}}";
 
