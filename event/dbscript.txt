@@ -9,7 +9,7 @@ CREATE INDEX catalogHostIdIdx ON Catalog(host, categoryId) UNIQUE;
 CREATE INDEX Catalog.updateDate ON Catalog(updateDate) NOTUNIQUE;
 
 CREATE CLASS Product extends V;
-CREATE PROPERTY Product.productId STRING;
+CREATE PROPERTY Product.entityId STRING;
 CREATE PROPERTY Product.name STRING;
 CREATE PROPERTY Product.host STRING;
 CREATE PROPERTY Product.description STRING;
@@ -18,7 +18,7 @@ CREATE PROPERTY Product.attributes EMBEDDEDMAP;
 CREATE PROPERTY Product.variants EMBEDDEDLIST;
 CREATE PROPERTY Product.createDate DATETIME;
 CREATE PROPERTY Product.updateDate DATETIME;
-CREATE INDEX Product.productId ON Product(productId) UNIQUE;
+CREATE INDEX Product.entityId ON Product(entityId) UNIQUE;
 CREATE INDEX Product.host ON Product(host) NOTUNIQUE;
 CREATE INDEX Product.name ON Product(name) NOTUNIQUE;
 
